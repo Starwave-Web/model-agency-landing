@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 export default {
+  darkMode: ["class"],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,11 +9,159 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "btn-primary": "linear-gradient(to bottom, #D0B48C 0%, #BFA27D 100%)",
+        "btn-outline": "linear-gradient(to bottom, #D0B48C 0%, #FFFFFF 100%)",
+        "featured-card": "linear-gradient(to bottom, #D0B48C 0%, #FCFEF0 100%)",
+		"btn-arrow":"linear-gradient(to bottom, #D0B48C 0%, #D0B48C 100%)",
+        "btn-hover": "linear-gradient(to bottom, #C0A681 0%, #A58C6C 100%)",
+        "btn-active": "linear-gradient(to bottom, #9F8B6D 0%, #967F63 100%)",
+        "text-primary":
+          "linear-gradient(to top right, #D0B48C 0%, #FCFEF0 50%, #E8DCC2 100%)",
+        "text-secondary":
+          "linear-gradient(to top right, #D0B48C 0%, #FCFEF0 100%)",
+		  "hero-bg": "url('/images/hero-bg.png')",
+		  "featured-marble-bg": "url('/images/featured-marble-bg.png')",
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+		"featured-card-bg": "#28292C",
+	  },
+      fontSize: {
+        btn: [
+          "1.5rem",
+          {
+            fontWeight: "600",
+            lineHeight: "normal",
+            letterSpacing: "0px",
+          },
+        ],
+        "btn-mobile": [
+          "1.25rem",
+          {
+            fontWeight: "600",
+            lineHeight: "100%",
+            letterSpacing: "0px",
+          },
+        ],
+        h1: [
+          "6rem",
+          {
+            fontWeight: "600",
+            lineHeight: "100%",
+          },
+        ],
+        "h1-mobile": [
+          "3rem",
+          {
+            fontWeight: "600",
+            lineHeight: "100%",
+          },
+        ],
+        h2: [
+          "4.5rem",
+          {
+            fontWeight: "600",
+            lineHeight: "4.6875rem",
+          },
+        ],
+        "h2-mobile": [
+          "2.25rem",
+          {
+            fontWeight: "600",
+            lineHeight: "2.75rem",
+          },
+        ],
+        h3: [
+          "4rem",
+          {
+            fontWeight: "600",
+            lineHeight: "100%",
+          },
+        ],
+        "h3-mobile": [
+          "2rem",
+          {
+            fontWeight: "600",
+            lineHeight: "100%",
+          },
+        ],
+        "services-link": [
+          "2rem",
+          {
+            fontWeight: "600",
+            lineHeight: "100%",
+          },
+        ],
+        "sub-title": [
+          "2.25rem",
+          {
+            fontWeight: "600",
+            lineHeight: "100%",
+          },
+        ],
+        "sub-title-mobile": [
+          "1.125rem",
+          {
+            fontWeight: "600",
+            lineHeight: "100%",
+          },
+        ],
+        "services-menu": [
+          "2rem",
+          {
+            fontWeight: "600",
+            lineHeight: "100%",
+          },
+        ],
+        "services-menu-mobile": [
+          "1rem",
+          {
+            fontWeight: "600",
+            lineHeight: "100%",
+          },
+        ],
+        h4: [
+          "3rem",
+          {
+            fontWeight: "600",
+            lineHeight: "100%",
+          },
+        ],
+        "h4-mobile": [
+          "1.5rem",
+          {
+            fontWeight: "600",
+            lineHeight: "100%",
+          },
+        ],
+        navigation: [
+          "1rem",
+          {
+            fontWeight: "600",
+            lineHeight: "100%",
+          },
+        ],
+        description: [
+          "1rem",
+          {
+            fontWeight: "600",
+            lineHeight: "100%",
+          },
+        ],
+        "form-text": [
+          "1.5rem",
+          {
+            fontWeight: "400",
+            lineHeight: "100%",
+          },
+        ],
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config;
