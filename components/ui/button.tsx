@@ -19,7 +19,7 @@ const buttonVariants = cva(
       },
       size: {
         default: "px-6 py-2",
-        iconCarousel: "h-[3.125rem] w-[3.125rem] p-[0.625rem]",
+        icon: "h-[3.125rem] w-[3.125rem] p-[0.625rem]",
       },
     },
     defaultVariants: {

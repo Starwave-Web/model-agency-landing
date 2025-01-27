@@ -1,6 +1,7 @@
+import { JSX } from "react"
 
 
-const FeaturedCarouselItem = ({logo}:{logo: any}) => {
+const FeaturedCarouselItem = ({logo}:{logo: JSX.Element}) => {
   return (
     <div className="bg-featured-card max-h-[75px] rounded-[100px] p-[1.5px] overflow-hidden w-fit h-fit">
       <div className="bg-featured-card-bg max-h-[72.5px] px-[55px] py-[22px] rounded-[101.5px] w-fit">
