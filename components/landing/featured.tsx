@@ -1,5 +1,4 @@
 "use client"
-import { ComponentRef, JSX, SVGProps } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import {
   ForbesLogo,
@@ -14,8 +13,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
 } from "@/components/ui/carousel";
 import FeaturedCarouselItem from "../ui/featured-carousel-item";
 
