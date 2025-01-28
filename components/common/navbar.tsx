@@ -14,7 +14,7 @@ const Navbar = () => {
           <div className="flex gap-1 items-center">
             <Crown className="h-[23px] w-[23px] md:h-[36px] md:w-[36px] text-[#D0B48C]" />
             <p className="primary-gradient-text text-[1.5rem] md:text-[2.5rem] font-semibold">
-              Ellux
+              Elluxe
             </p>
           </div>
           <ul className="text-white text-navigation gap-6 hidden md:flex">
@@ -25,17 +25,13 @@ const Navbar = () => {
           </ul>
           <div className="flex items-center gap-3">
             {open ? (
-              <div className="p-2" onClick={() => setOpen(false)}>
+              <div className="p-2 block md:hidden" onClick={() => setOpen(false)}>
                 <CloseIcon
-                  
-                  className="block md:hidden"
                 />
               </div>
             ) : (
-              <div className="p-2" onClick={() => setOpen(true)}>
+              <div className="p-2 block md:hidden" onClick={() => setOpen(true)}>
                 <HamburgerIcon
-                  
-                  className="block md:hidden"
                 />
               </div>
             )}

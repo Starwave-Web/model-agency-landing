@@ -8,7 +8,7 @@ const AboutUs = () => {
     <section className="w-full bg-marble-bg-big bg-cover py-32 md:py-[6.25rem]">
       <div className="container mx-auto px-6 flex flex-col gap-16 ">
         <h4 className="text-white text-h4-mobile md:text-h4">
-          Meet us - The OnlyElite Experience
+          Meet us - The Elluxe Experience
         </h4>
         <div className="relative ">
           <PlayButtonIcon className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-10 w-10 md:h-auto md:w-auto"/>

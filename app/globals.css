@@ -53,4 +53,19 @@
   .secondary-gradient-text {
     @apply bg-text-secondary inline-block text-transparent bg-clip-text;
   }
+  .outline-text-logo {
+    color: transparent;
+    -webkit-text-stroke: 3px white; /* Stroke width and color */
+    text-stroke: 3px white;
+  }
+  .outline-text-logo-mobile {
+    color: transparent;
+    -webkit-text-stroke: 1px white; /* Stroke width and color */
+    text-stroke: 1px white;
+  }
+  .outline-text-branch {
+    color: transparent;
+    -webkit-text-stroke: 1px white; /* Stroke width and color */
+    text-stroke: 1px white;
+  }
 }
