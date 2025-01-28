@@ -7,7 +7,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import ArrowButton from "@/components/ui/arrow-button";
 import GirlOne from "@/assets/images/girl-one.png"
 import GirlTwo from "@/assets/images/girl-two.png"
 import GirlThree from "@/assets/images/girl-three.png"
