@@ -9,19 +9,30 @@ export default {
   ],
   theme: {
     extend: {
+      textStrokeWidth: {
+        "1": "1px",
+        "2": "2px",
+        "3": "3px",
+        "4": "4px",
+      },
       backgroundImage: {
         "btn-primary": "linear-gradient(to bottom, #D0B48C 0%, #BFA27D 100%)",
         "btn-outline": "linear-gradient(to bottom, #D0B48C 0%, #FFFFFF 100%)",
         "featured-card": "linear-gradient(to bottom, #D0B48C 0%, #FCFEF0 100%)",
-		"btn-arrow":"linear-gradient(to bottom, #D0B48C 0%, #D0B48C 100%)",
+        "btn-arrow": "linear-gradient(to bottom, #FCFEF0 0%, #D0B48C 100%)",
         "btn-hover": "linear-gradient(to bottom, #C0A681 0%, #A58C6C 100%)",
         "btn-active": "linear-gradient(to bottom, #9F8B6D 0%, #967F63 100%)",
+
+        "result-carousel-fade": "linear-gradient(to right, #12131400 0%, #12131426 58%, #12131440 69%, #121314BF 83%, #121314F2 100%)",
+
+
         "text-primary":
           "linear-gradient(to top right, #D0B48C 0%, #FCFEF0 50%, #E8DCC2 100%)",
         "text-secondary":
           "linear-gradient(to top right, #D0B48C 0%, #FCFEF0 100%)",
-		  "hero-bg": "url('/images/hero-bg.png')",
-		  "featured-marble-bg": "url('/images/featured-marble-bg.png')",
+        "hero-bg": "url('/images/hero-bg.png')",
+        "featured-marble-bg": "url('/images/featured-marble-bg.png')",
+        "marble-bg-big": "url('/images/marble-bg-big.png')",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -29,8 +40,9 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
-		"featured-card-bg": "#28292C",
-	  },
+        "primary-black": "#1C1D1F",
+        "featured-card-bg": "#28292C",
+      },
       fontSize: {
         btn: [
           "1.5rem",
@@ -80,18 +92,25 @@ export default {
           "4rem",
           {
             fontWeight: "600",
-            lineHeight: "100%",
+            lineHeight: "110%",
           },
         ],
         "h3-mobile": [
           "2rem",
           {
             fontWeight: "600",
-            lineHeight: "100%",
+            lineHeight: "110%",
           },
         ],
         "services-link": [
           "2rem",
+          {
+            fontWeight: "600",
+            lineHeight: "100%",
+          },
+        ],
+        "services-link-mobile": [
+          "1rem",
           {
             fontWeight: "600",
             lineHeight: "100%",

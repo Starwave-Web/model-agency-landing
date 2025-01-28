@@ -52,7 +52,7 @@ const SFProDisplay = localFont({ src: [
 ] })
 
 export const metadata: Metadata = {
-  title: "Ellux Management",
+  title: "Elluxe Management",
   description: "Maximize your earnings, save time, and focus only on what matters",
 };
 
