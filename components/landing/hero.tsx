@@ -6,11 +6,11 @@ const Hero = () => {
       <div className="container mx-auto px-6">
         <div className="lg:max-w-1/2 md:max-w-2/3 max-w-full flex flex-col items-start gap-[2rem] md:gap-[2.75rem]">
           <div className="flex flex-col items-start gap-6">
-            <h1 className="text-h1-mobile md:text-h1 text-white">
-              <span className="primary-gradient-text">Your Profits.</span> More,{" "}
+            <h1 className="text-[36px] font-semibold md:text-h1 text-white">
+              <span className="secondary-gradient-text">Your Profits.</span> More,{" "}
               <br /> Faster, Easier.
             </h1>
-            <p className="text-white text-[1.375rem] md:text-[1.5rem] w-1/2">
+            <p className="text-white text-[1.375rem] md:text-[1.5rem] w-3/4 md:w-1/2">
               Maximize your earnings, save time, and focus only on what matters
             </p>
           </div>

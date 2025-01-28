@@ -22,6 +22,7 @@ export default {
           "linear-gradient(to top right, #D0B48C 0%, #FCFEF0 100%)",
 		  "hero-bg": "url('/images/hero-bg.png')",
 		  "featured-marble-bg": "url('/images/featured-marble-bg.png')",
+		  "marble-bg-big": "url('/images/marble-bg-big.png')",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -29,6 +30,7 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
+		"primary-black": "#1C1D1F",
 		"featured-card-bg": "#28292C",
 	  },
       fontSize: {
