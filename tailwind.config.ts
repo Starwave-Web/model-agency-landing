@@ -22,6 +22,10 @@ export default {
         "btn-arrow": "linear-gradient(to bottom, #FCFEF0 0%, #D0B48C 100%)",
         "btn-hover": "linear-gradient(to bottom, #C0A681 0%, #A58C6C 100%)",
         "btn-active": "linear-gradient(to bottom, #9F8B6D 0%, #967F63 100%)",
+
+        "result-carousel-fade": "linear-gradient(to right, #12131400 0%, #12131426 58%, #12131440 69%, #121314BF 83%, #121314F2 100%)",
+
+
         "text-primary":
           "linear-gradient(to top right, #D0B48C 0%, #FCFEF0 50%, #E8DCC2 100%)",
         "text-secondary":
@@ -88,14 +92,14 @@ export default {
           "4rem",
           {
             fontWeight: "600",
-            lineHeight: "100%",
+            lineHeight: "110%",
           },
         ],
         "h3-mobile": [
           "2rem",
           {
             fontWeight: "600",
-            lineHeight: "100%",
+            lineHeight: "110%",
           },
         ],
         "services-link": [
