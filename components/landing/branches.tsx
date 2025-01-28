@@ -37,6 +37,7 @@ const Branches = () => {
         </h4>
         <h5 className="text-white text-sub-title-mobile md:text-sub-title text-center w-full md:w-2/3">
           A worldwide network of industry experts. <br/> From London through Dubai to
+
           Los Angeles, we&apos;re by your side.
         </h5>
       </div>
