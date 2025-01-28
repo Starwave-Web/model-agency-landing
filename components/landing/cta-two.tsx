@@ -6,7 +6,7 @@ const CTATwo = () => {
     <section className="w-full bg-primary-black">
       <div className="container mx-auto px-6 py-32 flex flex-col gap-16 items-center">
         <h4 className="text-white text-h4-mobile md:text-h4 self-start w-2/3 md:w-1/2">
-          No "leading OnlyFans management" fluff. Our agency is driven by
+          No &quot;leading OnlyFans management&quot; fluff. Our agency is driven by
           results.
         </h4>
         <h4 className="text-white text-h4-mobile md:text-h4 text-right md:text-left self-end w-2/3 md:w-1/2">
@@ -19,7 +19,7 @@ const CTATwo = () => {
           Focus on building wealth, not chasing likes.
         </h4>
         <h4 className="text-white text-h4-mobile md:text-h4 text-right md:text-left self-end w-2/3 md:w-1/2">
-          We're not here{" "}
+          We&apos;re not here{" "}
           <span className="primary-gradient-text">to boast about</span> how we
           generated <span className="primary-gradient-text">$millions</span> in
           earnings or taken clients from $5k to $280K+ monthly.
