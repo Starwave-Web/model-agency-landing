@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
+import { SECTIONS } from "@/lib/const";
 
 const CTAOne = () => {
   return (
-    <section className="w-full bg-primary-black">
+    <section id={SECTIONS.CTAONE} className="w-full bg-primary-black">
       <div className="container mx-auto px-6 py-32  md:pt-[10.125rem] md:pb-[17.9375rem]">
         <div className="flex flex-col items-center gap-16">
           <h4 className="text-white text-h4-mobile md:text-h4 text-center">

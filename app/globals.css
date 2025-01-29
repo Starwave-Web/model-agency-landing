@@ -40,6 +40,11 @@
     max-width: 1180px;
   }
 }
+
+input, textarea {
+  --tw-ring-shadow: 0 0 #000 !important;
+}
+
 @layer base {
   :root {
     --radius: 0.5rem;

@@ -1,5 +1,6 @@
 import AboutUs from "@/components/landing/about-us";
 import Branches from "@/components/landing/branches";
+import ContactUs from "@/components/landing/contact-us";
 import CTAEight from "@/components/landing/cta-eight";
 import CTAFive from "@/components/landing/cta-five";
 import CTAFour from "@/components/landing/cta-four";
@@ -28,6 +29,7 @@ export default function Home() {
       <CTASix/>
       <CTASeven/>
       <CTAEight/>
+      <ContactUs/>
     </main>
   );
 }

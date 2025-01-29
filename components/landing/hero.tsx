@@ -1,12 +1,13 @@
 import { Button } from "@/components/ui/button";
+import { SECTIONS } from "@/lib/const";
 
 const Hero = () => {
   return (
-    <section className="w-full bg-hero-bg bg-cover -mt-[92px] flex items-center h-[100vh]">
+    <section id={SECTIONS.HERO} className="w-full bg-hero-bg bg-cover bg-center -mt-[92px] flex items-center h-[100vh]">
       <div className="container mx-auto px-6">
         <div className="lg:max-w-1/2 md:max-w-2/3 max-w-full flex flex-col items-start gap-[2rem] md:gap-[2.75rem]">
           <div className="flex flex-col items-start gap-6">
-            <h1 className="text-[36px] font-semibold md:text-h1 text-white">
+            <h1 className="text-[36px] font-semibold md:text-h2 text-white">
               <span className="secondary-gradient-text">Your Profits.</span> More,{" "}
               <br /> Faster, Easier.
             </h1>

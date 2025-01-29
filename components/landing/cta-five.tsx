@@ -1,8 +1,9 @@
 import ArrowButton from "@/components/ui/arrow-button";
+import { SECTIONS } from "@/lib/const";
 
 const CTAFive = () => {
   return (
-    <section className="w-full bg-primary-black">
+    <section id={SECTIONS.CTAFIVE} className="w-full bg-primary-black">
       <div className="container mx-auto px-6 flex flex-col items-center gap-16 md:gap-[7rem] py-32 md:pt-[6.25rem] md:pb-[12.0625rem]">
         <h4 className="text-white text-h4-mobile md:text-h4">
           No more dependency.<br/>No more hassles.<br/>No more ...

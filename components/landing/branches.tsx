@@ -7,6 +7,7 @@ import London from "@/assets/images/branches/london.webp";
 import GoldCoast from "@/assets/images/branches/gold-coast.webp";
 import HoverBranchCard from "../ui/hover-branch-card";
 import BranchesCarousel from "../ui/branches-carousel";
+import { SECTIONS } from "@/lib/const";
 
 const branches = [
   { id: "Dubai", location: "Dubai", image: Dubai, alt: "Dubai" },
@@ -30,7 +31,7 @@ const branches = [
 
 const Branches = () => {
   return (
-    <section className="w-full bg-marble-bg-big bg-cover pb-[7rem]">
+    <section id={SECTIONS.BRANCHES} className="w-full bg-marble-bg-big bg-cover pb-[7rem]">
       <div className="container mx-auto px-6 flex flex-col items-center gap-12 pt-[4.8125rem] pb-[6.125rem] md:pb-[8rem]">
         <h4 className="text-white text-h4-mobile md:text-h4 text-center">
           Our <span className="primary-gradient-text">Global Branches</span>

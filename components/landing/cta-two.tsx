@@ -1,9 +1,10 @@
 import Image from "next/image";
 import MobilePhone from "@/assets/images/mobile_chat.png";
+import { SECTIONS } from "@/lib/const";
 
 const CTATwo = () => {
   return (
-    <section className="w-full bg-primary-black">
+    <section id={SECTIONS.CTATWO} className="w-full bg-primary-black">
       <div className="container mx-auto px-6 py-32 flex flex-col gap-16 items-center">
         <h4 className="text-white text-h4-mobile md:text-h4 self-start w-2/3 md:w-1/2">
           No &quot;leading OnlyFans management&quot; fluff. Our agency is driven by

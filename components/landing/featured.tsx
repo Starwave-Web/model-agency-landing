@@ -15,6 +15,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import FeaturedCarouselItem from "../ui/featured-carousel-item";
+import { SECTIONS } from "@/lib/const";
 
 const partnerLogos = [
   { id: "ForbesLogo", logo: <ForbesLogo /> },
@@ -35,7 +36,7 @@ const partnerLogos = [
 
 const Featured = () => {
   return (
-    <section className="w-full bg-featured-marble-bg bg-cover relative">
+    <section id={SECTIONS.FEATURED} className="w-full bg-featured-marble-bg bg-cover relative">
         <div className="w-[96px] md:w-[230px] h-full absolute top-0 left-0 z-10 bg-gradient-to-r from-[#1C1D1F] from-0% via-[#1C1D1F]/95 via-5% md:via-19% to-[#1C1D1F]/0 to-100% "/>
         <div className="w-[96px] md:w-[230px] h-full absolute top-0 right-0 z-10 bg-gradient-to-l from-[#1C1D1F] from-0% via-[#1C1D1F]/95 via-5% md:via-19% to-[#1C1D1F]/0 to-100% "/>
       <div className="mx-auto py-[2.5625rem]">

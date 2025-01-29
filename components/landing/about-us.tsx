@@ -2,10 +2,11 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { PlayButtonIcon } from "@/components/icons/common";
 import VideoCover from "@/assets/images/video-cover.png";
+import { SECTIONS } from "@/lib/const";
 
 const AboutUs = () => {
   return (
-    <section className="w-full bg-marble-bg-big bg-cover py-32 md:py-[6.25rem]">
+    <section id={SECTIONS.ABOUTUS} className="w-full bg-marble-bg-big bg-cover py-32 md:py-[6.25rem]">
       <div className="container mx-auto px-6 flex flex-col gap-16 ">
         <h4 className="text-white text-h4-mobile md:text-h4">
           Meet us - The Elluxe Experience
