@@ -76,7 +76,7 @@ const ContactForm = () => {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         // It was: (formData as any) for future reference
-        body: new URLSearchParams(formData as unknown as string).toString(),
+        body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
       });
       if (res.status === 200) {
         form.reset();
