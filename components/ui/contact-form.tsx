@@ -132,6 +132,15 @@ const ContactForm = () => {
           />
           <FormField
             control={form.control}
+            name="subject"
+            render={({ field }) => (
+              <FormItem>
+                <Input type="hidden" {...field} value="Elluxe Contact Form" />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
             name="name"
             render={({ field }) => (
               <FormItem>
