@@ -44,6 +44,7 @@ const Featured = () => {
           opts={{
             align: "start",
             loop: true,
+            duration: 2000,
           }}
           plugins={[
             Autoplay({
