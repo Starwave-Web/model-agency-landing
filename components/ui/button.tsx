@@ -16,6 +16,7 @@ const buttonVariants = cva(
         outline:
           "bg-origin-border bg-btn-outline bg-transparent border-[1.5px] text-white hover:border-transparent hover:bg-btn-hover active:border-transparent active:bg-btn-active diabled:border-transparent disabled:bg-btn-primary/75 disabled:text-white/75",
         icon: "rounded-full h-[1.875rem] w-[1.875rem] md:h-[3.75rem] md:w-[3.75rem] p-[0.9375rem] bg-btn-arrow hover:bg-btn-hover active:bg-btn-active disabled:bg-btn-primary/75",
+        ghost: "bg-trasparent border-none text-white hover:bg-[#CACACA] active:bg-[#A9A9A9] disabled:bg-white/75 disabled:text-[#1C1D1F]/75"  
       },
       size: {
         default: "px-6 py-2",
