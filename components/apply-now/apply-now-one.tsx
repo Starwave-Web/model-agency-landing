@@ -36,7 +36,7 @@ const ApplyNowOne = ({ isVip, updateField }: ApplyNowOneProps) => {
               />
             </div>
             <p className="text-white text-form-text">
-              If you're not at $10,000 leave this blank, we will get you there
+              If you&apos;re not at $10,000 leave this blank, we will get you there
               soon enough
             </p>
           </div>
