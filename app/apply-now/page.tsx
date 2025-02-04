@@ -60,7 +60,6 @@ const ApplyNow = () => {
         throw new Error("Failed to submit form");
       }
 
-      const result = await response.json();
       setApplicationFormData(INITIAL_DATA);
       router.push("/"); 
       } catch (error) {
@@ -75,19 +74,19 @@ const ApplyNow = () => {
   };
 
   const { step, isFirstStep, isLastStep, steps, currentStepIndex, back, next } = useMultistepForm([
-      <ApplyNowOne {...applicationFormData} updateField={updateField} />,
-      <ApplyNowTwo {...applicationFormData} updateField={updateField} />,
-      <ApplyNowThree {...applicationFormData} updateField={updateField} />,
-      <ApplyNowFour {...applicationFormData} updateField={updateField} />,
-      <ApplyNowFive {...applicationFormData} updateField={updateField} />,
-      <ApplyNowSix {...applicationFormData} updateField={updateField} />,
-      <ApplyNowSeven {...applicationFormData} updateField={updateField} />,
-      <ApplyNowEight />,
-      <ApplyNowNine {...applicationFormData} updateField={updateField} />,
+      <ApplyNowOne key={"one"} {...applicationFormData} updateField={updateField} />,
+      <ApplyNowTwo key={"two"} {...applicationFormData} updateField={updateField} />,
+      <ApplyNowThree key={"three"} {...applicationFormData} updateField={updateField} />,
+      <ApplyNowFour key={"four"} {...applicationFormData} updateField={updateField} />,
+      <ApplyNowFive key={"five"} {...applicationFormData} updateField={updateField} />,
+      <ApplyNowSix  key={"six"} {...applicationFormData} updateField={updateField} />,
+      <ApplyNowSeven key={"seven"} {...applicationFormData} updateField={updateField} />,
+      <ApplyNowEight key={"eight"} />,
+      <ApplyNowNine key={"nine"} {...applicationFormData} updateField={updateField} />,
   ]);
 
   return (
-    <div className="w-full bg-primary-black -mt-[92px]">
+    <div className="w-full bg-primary-black -mt-[100px]">
       <div className="container py-[92px] mx-auto">
         <form
           onSubmit={onSubmit}

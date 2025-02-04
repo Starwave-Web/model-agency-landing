@@ -12,7 +12,7 @@ const ApplyNowTwo = ({ firstName, updateField }: ApplyNowTwoProps) => {
       <div className="container mx-auto flex flex-col gap-16 px-6 pt-[146px]">
         <div className="flex items-center justify-between">
           <h1 className="text-white text-h3-mobile md:text-h3 w-full md:w-3/4">
-            2. What's your first name?
+            2. What&apos;s your first name?
           </h1>
         </div>
         <input

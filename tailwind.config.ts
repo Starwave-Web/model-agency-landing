@@ -16,6 +16,7 @@ export default {
         "4": "4px",
       },
       backgroundImage: {
+        "navbar-bg": "linear-gradient(to top right, #1C1D1F 0%, #28292C 50%, #1C1D1F 100%)",
         "btn-primary": "linear-gradient(to bottom, #D0B48C 0%, #BFA27D 100%)",
         "btn-outline": "linear-gradient(to bottom, #D0B48C 0%, #FFFFFF 100%)",
         "featured-card": "linear-gradient(to bottom, #D0B48C 0%, #FCFEF0 100%)",

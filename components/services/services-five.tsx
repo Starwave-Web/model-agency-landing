@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
+import FadeInAnimation from "../common/fade-in-animation";
 
 const ServicesFive = () => {
   return (
     <section className="w-full bg-primary-black">
+      <FadeInAnimation threshold={0.2}>
       <div className="container mx-auto px-6 py-32 md:py-[190px]">
         <div className="flex justify-between">
           <div className="flex flex-col min-[1280px]:flex-row md:gap-8  min-[1280px]:justify-between">
@@ -77,6 +79,7 @@ const ServicesFive = () => {
           </div>
         </div>
       </div>
+      </FadeInAnimation>
     </section>
   );
 };
