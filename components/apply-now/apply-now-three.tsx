@@ -16,6 +16,8 @@ const ApplyNowThree = ({ age, updateField }: ApplyNowThreeProps) => {
           </h1>
         </div>
         <input
+          autoFocus
+          required
           type="number"
           min={18}
           max={99}

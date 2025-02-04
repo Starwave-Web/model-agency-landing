@@ -16,6 +16,9 @@ const ApplyNowTwo = ({ firstName, updateField }: ApplyNowTwoProps) => {
           </h1>
         </div>
         <input
+          autoFocus
+          required
+          type="text"
           value={firstName}
           onChange={(e) => updateField({ firstName: e.target.value })}
           placeholder="First name"

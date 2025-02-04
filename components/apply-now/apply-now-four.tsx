@@ -16,6 +16,9 @@ const ApplyNowFour = ({ location, updateField }: ApplyNowFourProps) => {
           </h1>
         </div>
         <input
+          autoFocus
+          required
+          type="text"
           value={location}
           onChange={(e) => updateField({ location: e.target.value })}
           placeholder="Location"

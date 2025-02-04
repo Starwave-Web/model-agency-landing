@@ -16,6 +16,9 @@ const ApplyNowFive = ({ socialMedia, updateField }: ApplyNowFiveProps) => {
           </h1>
         </div>
         <input
+          autoFocus
+          required
+          type="text"
           value={socialMedia}
           onChange={(e) => updateField({ socialMedia: e.target.value })}
           placeholder="Instagram"

@@ -21,6 +21,8 @@ const ApplyNowSix = ({
         </div>
         <div className="flex flex-col gap-2">
           <input
+            autoFocus
+            type="text"
             value={onlyFansAccountLink}
             onChange={(e) =>
               updateField({ onlyFansAccountLink: e.target.value })

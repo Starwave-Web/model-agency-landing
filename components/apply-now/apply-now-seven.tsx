@@ -16,6 +16,9 @@ const ApplyNowSeven = ({ contactInfo, updateField }: ApplyNowSevenProps) => {
           </h1>
         </div>
         <input
+          autoFocus
+          required
+          type="text"
           value={contactInfo}
           onChange={(e) => updateField({ contactInfo: e.target.value })}
           placeholder="Phone number"

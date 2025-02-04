@@ -14,6 +14,7 @@ import { Button } from "@/components/ui/button";
 import ProgressCircle from "@/components/ui/progress-circle";
 
 import { useMultistepForm } from "@/lib/useMultistepForm";
+import { useRouter } from "next/navigation";
 
 import { FormEvent, useState } from "react";
 
@@ -25,7 +26,6 @@ type ApplicationFormData = {
   socialMedia: string;
   onlyFansAccountLink: string;
   contactInfo: string;
-  isCalendlyBooked: boolean;
   message: string;
 };
 const INITIAL_DATA: ApplicationFormData = {
@@ -36,17 +36,37 @@ const INITIAL_DATA: ApplicationFormData = {
   socialMedia: "",
   onlyFansAccountLink: "",
   contactInfo: "",
-  isCalendlyBooked: false,
   message: "",
 };
 
 const ApplyNow = () => {
   const [applicationFormData, setApplicationFormData] = useState(INITIAL_DATA);
+  const router = useRouter();
 
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    next();
-    console.log("submit");
+    if (!isLastStep) return next();
+    if (isLastStep) {
+      try {
+      const response = await fetch("/api/airtable", {
+        method: "POST",
+        headers: {
+        "Content-Type": "application/json",
+        },
+        body: JSON.stringify(applicationFormData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to submit form");
+      }
+
+      const result = await response.json();
+      setApplicationFormData(INITIAL_DATA);
+      router.push("/"); 
+      } catch (error) {
+      console.error("Error submitting form:", error);
+      }
+    }
   };
   const updateField = (fields: Partial<ApplicationFormData>) => {
     setApplicationFormData((prev) => {
@@ -62,7 +82,7 @@ const ApplyNow = () => {
       <ApplyNowFive {...applicationFormData} updateField={updateField} />,
       <ApplyNowSix {...applicationFormData} updateField={updateField} />,
       <ApplyNowSeven {...applicationFormData} updateField={updateField} />,
-      <ApplyNowEight {...applicationFormData} updateField={updateField} />,
+      <ApplyNowEight />,
       <ApplyNowNine {...applicationFormData} updateField={updateField} />,
   ]);
 
@@ -80,15 +100,14 @@ const ApplyNow = () => {
             <p className="text-white text-form-text">{currentStepIndex + 1}/{steps.length}</p>
           </div>
           {step}
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between px-6">
             {!isFirstStep && (
               <Button onClick={back} type="button" variant="ghost">
                 Previous
               </Button>
             )}
             <Button
-              onClick={isLastStep ? () => {} : next}
-              type={isLastStep ? "button" : "button"}
+              type="submit"
               variant="default"
             >
               {isLastStep ? "Finish" : "Next"}

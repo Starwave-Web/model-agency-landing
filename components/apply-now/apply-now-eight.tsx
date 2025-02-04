@@ -1,17 +1,7 @@
 import CalendlyEmbed from "./calendly-embed";
 
-type ApplyNowEight = {
-  isCalendlyBooked: boolean;
-};
 
-type ApplyNowEightProps = ApplyNowEight & {
-  updateField: (field: ApplyNowEight) => void;
-};
-
-const ApplyNowEight = ({
-  isCalendlyBooked,
-  updateField,
-}: ApplyNowEightProps) => {
+const ApplyNowEight = () => {
   return (
     <section className="w-full h-auto bg-primary-black">
       <div className="container mx-auto flex flex-col gap-16 px-6 pt-[146px]">
@@ -31,16 +21,6 @@ const ApplyNowEight = ({
               )}
             </div>
           </div>
-          <input
-            hidden
-            type="checkbox"
-            checked={isCalendlyBooked}
-            onChange={(e) =>
-              updateField({ isCalendlyBooked: e.target.checked })
-            }
-            placeholder="OnlyFans link"
-            className="bg-transparent text-white !text-form-text !border-b-[2px] !border-b-white w-full border-t-0 border-x-0 rounded-none"
-          />
         </div>
       </div>
     </section>

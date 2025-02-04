@@ -19,7 +19,7 @@ const ApplyNowNine = ({ message, updateField }: ApplyNowNineProps) => {
           <input
             value={message}
             onChange={(e) => updateField({ message: e.target.value })}
-            placeholder="OnlyFans link"
+            placeholder="Message"
             className="bg-transparent text-white !text-form-text !border-b-[2px] !border-b-white w-full border-t-0 border-x-0 rounded-none"
           />
           <p className="text-white text-description">*Optional</p>
