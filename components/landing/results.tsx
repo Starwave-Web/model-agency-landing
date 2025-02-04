@@ -10,9 +10,12 @@ import {
 import GirlOne from "@/assets/images/girl-one.png";
 import GirlTwo from "@/assets/images/girl-two.png";
 import GirlThree from "@/assets/images/girl-three.png";
+import GirlFour from "@/assets/images/girl-four.png";
+import GirlFive from "@/assets/images/girl-five.png";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { SECTIONS } from "@/lib/const";
+import Link from "next/link";
 
 const Results = () => {
   return (
@@ -49,14 +52,28 @@ const Results = () => {
               <Image
                 className="max-w-[209px] md:max-w-[237px]"
                 src={GirlTwo}
-                alt="client_one"
+                alt="client_two"
               />
             </CarouselItem>
             <CarouselItem className="md:basis-1/3 sm:pl-16">
               <Image
                 className="max-w-[209px] md:max-w-[237px]"
                 src={GirlThree}
-                alt="client_one"
+                alt="client_three"
+              />
+            </CarouselItem>
+            <CarouselItem className="md:basis-1/3 sm:pl-16">
+              <Image
+                className="max-w-[209px] md:max-w-[237px]"
+                src={GirlFour}
+                alt="client_four"
+              />
+            </CarouselItem>
+            <CarouselItem className="md:basis-1/3 sm:pl-16">
+              <Image
+                className="max-w-[209px] md:max-w-[237px]"
+                src={GirlFive}
+                alt="client_five"
               />
             </CarouselItem>
             <CarouselItem className="md:basis-1/3 sm:pl-16">
@@ -66,25 +83,11 @@ const Results = () => {
                 alt="client_one"
               />
             </CarouselItem>
-            <CarouselItem className="md:basis-1/3 sm:pl-16">
-              <Image
-                className="max-w-[209px] md:max-w-[237px]"
-                src={GirlTwo}
-                alt="client_one"
-              />
-            </CarouselItem>
-            <CarouselItem className="md:basis-1/3 sm:pl-16">
-              <Image
-                className="max-w-[209px] md:max-w-[237px]"
-                src={GirlThree}
-                alt="client_one"
-              />
-            </CarouselItem>
           </CarouselContent>
           <CarouselPrevious className="hidden md:flex -left-6" />
           <CarouselNext className="hidden md:flex -right-6" />
         </Carousel>
-        <Button>Apply Now</Button>
+        <Link href="/apply-now"><Button>Apply Now</Button></Link>
       </div>
     </section>
   );

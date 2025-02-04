@@ -43,6 +43,7 @@
 
 input, textarea {
   --tw-ring-shadow: 0 0 #000 !important;
+  outline: none;
 }
 
 @layer base {
@@ -74,3 +75,4 @@ input, textarea {
     text-stroke: 1px white;
   }
 }
+
