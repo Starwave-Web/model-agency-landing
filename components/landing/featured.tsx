@@ -44,18 +44,18 @@ const Featured = () => {
           opts={{
             align: "start",
             loop: true,
-            duration: 2000,
+            duration: 4500,
           }}
           plugins={[
             Autoplay({
-              delay: 2000,
+              delay: 3000,
             }),
           ]}
         >
           <CarouselContent className="flex justify-between gap-2 py-2">
             {partnerLogos.map((partnerLogo, __index) => (
               <CarouselItem
-                className="w-fit"
+                className="w-fit pl-16"
                 key={`${__index}_${partnerLogo.id}`}
               >
                 <FeaturedCarouselItem logo={partnerLogo.logo} />

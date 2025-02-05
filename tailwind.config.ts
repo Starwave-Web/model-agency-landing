@@ -28,7 +28,7 @@ export default {
         "result-carousel-fade": "linear-gradient(to right, #12131400 0%, #12131426 58%, #12131440 69%, #121314BF 83%, #121314F2 100%)",
 
         "text-primary":
-          "linear-gradient(to top right, #D0B48C 0%, #FCFEF0 50%, #E8DCC2 100%)",
+          "linear-gradient(20deg, #D0B48C 25%, #FFFFFF 40%, #D0B48C 55%)",
         "text-secondary":
           "linear-gradient(to top right, #D0B48C 0%, #FCFEF0 100%)",
         "hero-bg": "url('/images/hero-bg.png')",
@@ -160,7 +160,7 @@ export default {
           },
         ],
         navigation: [
-          "1rem",
+          "1.125rem",
           {
             fontWeight: "600",
             lineHeight: "100%",

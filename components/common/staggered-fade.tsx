@@ -43,7 +43,7 @@ export const StaggeredFade: React.FC<TextStaggeredFadeProps> = ({
       variants={variants}
       viewport={{ once: true }}
       className={cn(
-        'text-[36px] font-semibold md:text-h2 text-white',
+        'text-[2.5rem] font-semibold md:text-h2 text-white',
         className
       )}
     >
@@ -52,7 +52,7 @@ export const StaggeredFade: React.FC<TextStaggeredFadeProps> = ({
           key={`${letter}-${i}`}
           variants={variants}
           custom={i}
-          className={letter === ' ' ? 'inline-block' : ''} // To prevent space splitting
+          className="inline-block md:inline" // To prevent space splitting
         >
           {letter}
         </motion.span>

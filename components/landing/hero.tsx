@@ -7,15 +7,15 @@ const Hero = () => {
   return (
     <section
       id={SECTIONS.HERO}
-      className="w-full bg-hero-bg bg-cover bg-center -mt-[100px] flex items-center h-[100vh]"
+      className="w-full bg-hero-bg bg-cover bg-center -mt-[6.25rem] flex items-center h-[80vh] md:h-[100vh]"
     >
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 md:mt-[3.125rem]">
         <div className="lg:max-w-1/2 md:max-w-2/3 max-w-full flex flex-col items-start gap-[2rem] md:gap-[2.75rem]">
           <div className="flex flex-col items-start gap-6">
             <div className="flex flex-col gap-0">
-              <span className="secondary-gradient-text flex">
+              <span className="primary-gradient-text flex">
                 <StaggeredFade
-                  className="text-secondary-gradient-text"
+                  className="text-primary-gradient-text "
                   text="Your Profits."
                   delay={0}
                 />
@@ -34,7 +34,7 @@ const Hero = () => {
               </span>
             </div>
 
-            <p className="text-white text-[1.375rem] md:text-[1.5rem] w-3/4 md:w-1/2">
+            <p className="text-white text-[1.25rem] md:text-[1.5rem] w-5/6 md:w-1/2">
               Maximize your earnings, save time, and focus only on what matters
             </p>
           </div>

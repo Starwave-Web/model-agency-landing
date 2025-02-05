@@ -23,7 +23,7 @@ const Results = () => {
       <div className="container mx-auto px-6 flex flex-col items-center gap-16 md:gap-24 py-32 md:pt-[9.6875rem] md:pb-[10.6875rem]">
         <h4 className="text-white text-h4-mobile md:text-h4 self-start">
           Here’s what we can achieve{" "}
-          <span className="primary-gradient-text">together</span>
+          <span className="primary-gradient-text leading-[58px]">together</span>
         </h4>
         <Carousel
           className="px-8 w-full relative"
@@ -74,13 +74,6 @@ const Results = () => {
                 className="max-w-[209px] md:max-w-[237px]"
                 src={GirlFive}
                 alt="client_five"
-              />
-            </CarouselItem>
-            <CarouselItem className="md:basis-1/3 sm:pl-16">
-              <Image
-                className="max-w-[209px] md:max-w-[237px]"
-                src={GirlOne}
-                alt="client_one"
               />
             </CarouselItem>
           </CarouselContent>
