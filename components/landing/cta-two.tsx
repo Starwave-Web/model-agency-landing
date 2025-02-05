@@ -49,7 +49,7 @@ const CTATwo = () => {
           </FadeInAnimation>
           <FadeInAnimation threshold={0.2}>
             <Image
-              className="max-w-[15.75rem] md:max-w-[42.25rem]"
+              className="max-w-[252px] md:max-w-[520px]"
               src={MobilePhone}
               alt="mobile_phone"
             />
