@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { SECTIONS } from "@/lib/const";
 import Link from "next/link";
 import { StaggeredFade } from "../common/staggered-fade";
+import { trackEvent } from "@/lib/analytics";
 
 const Hero = () => {
   return (
@@ -39,7 +40,7 @@ const Hero = () => {
             </p>
           </div>
           <Link href="/apply-now">
-            <Button variant="white">Apply Now</Button>
+            <Button onClick={() => trackEvent("User Interaction", "Click", "Hero Apply Now")} variant="white">Apply Now</Button>
           </Link>
         </div>
       </div>

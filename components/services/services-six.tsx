@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import FadeInAnimation from "../common/fade-in-animation";
+import { trackEvent } from "@/lib/analytics";
+import { SECTIONS } from "@/lib/const";
 
 const ServiesSix = () => {
   return (
-    <section className="w-full bg-primary-black">
+    <section id={SECTIONS.STABILITYSECURITY} className="w-full bg-primary-black">
       <FadeInAnimation threshold={0.2}>
         <div className="container mx-auto px-6 py-32 md:py-[177px]">
           <div className="flex flex-col min-[1280px]:flex-row md:gap-8 md:justify-between">
@@ -12,7 +14,7 @@ const ServiesSix = () => {
                 Stability, Security &{" "}
                 <span className="primary-gradient-text">Friends</span>
               </h4>
-              <Button className="hidden min-[1280px]:block" variant="outline">
+              <Button onClick={() => trackEvent("User Interaction", "Click", "Services6 Apply Now")} className="hidden min-[1280px]:block" variant="outline">
                 Apply Now
               </Button>
             </div>
@@ -64,6 +66,7 @@ const ServiesSix = () => {
                   attacks.
                 </p>
                 <Button
+                  onClick={() => trackEvent("User Interaction", "Click", "Services6 Apply Now")}
                   className="min-[1280px]:hidden w-fit mt-4"
                   variant="outline"
                 >

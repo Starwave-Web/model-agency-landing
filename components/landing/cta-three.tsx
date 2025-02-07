@@ -2,6 +2,7 @@ import ArrowButton from "@/components/ui/arrow-button";
 import { SECTIONS } from "@/lib/const";
 import Link from "next/link";
 import FadeInAnimation from "../common/fade-in-animation";
+import { trackEvent } from "@/lib/analytics";
 
 const CTAThree = () => {
   return (
@@ -24,8 +25,8 @@ const CTAThree = () => {
               work and how it will
               <br /> increase your earnings
             </p>
-            <Link href="/services">
-              <ArrowButton carousel={false} />
+            <Link onClick={() => trackEvent("User Interaction", "Click", "CTA3 Go To Services")} href="/services">
+              <ArrowButton  carousel={false} />
             </Link>
           </div>
         </FadeInAnimation>

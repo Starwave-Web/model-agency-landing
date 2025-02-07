@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import FadeInAnimation from "../common/fade-in-animation";
+import { trackEvent } from "@/lib/analytics";
 
 const ServicesOne = () => {
   return (
@@ -19,7 +20,7 @@ const ServicesOne = () => {
           </FadeInAnimation>
         </div>
         <FadeInAnimation>
-        <Button variant="default">Apply Now</Button>
+        <Button onClick={() => trackEvent("User Interaction", "Click", "Services1 Apply Now")} variant="default">Apply Now</Button>
         </FadeInAnimation>      
       </div>
     </section>

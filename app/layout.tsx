@@ -4,6 +4,10 @@ import localFont from "next/font/local";
 import Navbar from "@/components/common/navbar";
 import Footer from "@/components/common/footer";
 import { Toaster } from "@/components/ui/toaster";
+import { usePathname } from "next/navigation";
+import { useEffect } from "react";
+import { initGA, trackPageView } from "@/lib/analytics";
+import ScrollDepthTracker from "@/lib/scrollDepthTracker";
 
 const SFProDisplay = localFont({
   src: [
@@ -66,6 +70,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pathname = usePathname();
+
+  useEffect(() => {
+    initGA();
+
+    if (pathname) {
+      trackPageView(pathname);
+    }
+  }, [pathname]);
   return (
     <html lang="en">
       <body className={SFProDisplay.className}>
@@ -73,6 +86,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <Toaster />
+        <ScrollDepthTracker/>
       </body>
     </html>
   );

@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import FadeInAnimation from "../common/fade-in-animation";
+import { trackEvent } from "@/lib/analytics";
+import { SECTIONS } from "@/lib/const";
 
 const ServicesFour = () => {
   return (
-    <section className="w-full bg-primary-black">
+    <section id={SECTIONS.COMPANYDEVELOPMENT} className="w-full bg-primary-black">
       <FadeInAnimation threshold={0.2}>
       <div className="container mx-auto px-6 py-32 md:py-[262px]">
         <div className="flex flex-col min-[1280px]:flex-row min-[1280px]:justify-between">
@@ -11,7 +13,7 @@ const ServicesFour = () => {
             <h4 className="text-white text-h4-mobile md:text-h4 mb-8">
               Company <span className="primary-gradient-text">development</span>
             </h4>
-            <Button className="hidden min-[1280px]:block" variant="outline">Apply Now</Button>
+            <Button onClick={() => trackEvent("User Interaction", "Click", "Services4 Apply Now")} className="hidden min-[1280px]:block" variant="outline">Apply Now</Button>
           </div>
           <div className="flex flex-col gap-4">
             <div className="flex items-start gap-[2px] text-white">
@@ -30,7 +32,7 @@ const ServicesFour = () => {
               influence, we are committed to helping you achieve lasting
               financial success and stability.
             </p>
-            <Button className="min-[1280px]:hidden w-fit mt-4" variant="outline">Apply Now</Button>
+            <Button onClick={() => trackEvent("User Interaction", "Click", "Services4 Apply Now")} className="min-[1280px]:hidden w-fit mt-4" variant="outline">Apply Now</Button>
           </div>
         </div>
       </div>

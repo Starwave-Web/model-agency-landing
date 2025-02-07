@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { SECTIONS } from "@/lib/const";
 import Link from "next/link";
 import FadeInAnimation from "../common/fade-in-animation";
+import { trackEvent } from "@/lib/analytics";
 
 const CTASeven = () => {
   return (
@@ -29,7 +30,7 @@ const CTASeven = () => {
             </FadeInAnimation>
           </div>
           <FadeInAnimation>
-          <Link href="/apply-now"><Button variant="default">Apply Now</Button></Link>
+          <Link href="/apply-now"><Button onClick={() => trackEvent("User Interaction", "Click", "CTA7 Apply Now")} variant="default">Apply Now</Button></Link>
           </FadeInAnimation>
         </div>
       </div>

@@ -1,4 +1,5 @@
 "use client";
+import { trackEvent } from "@/lib/analytics";
 import { SECTIONS } from "@/lib/const";
 import { scrollToSection } from "@/lib/utils";
 import Link from "next/link";
@@ -13,6 +14,7 @@ const Footer = () => {
     if (pathname !== "/") {
       router.push(`/#${section}`);
     }
+    trackEvent("User Interaction", "Click", `Navigation ${section}`)
     scrollToSection(section);
   };
 

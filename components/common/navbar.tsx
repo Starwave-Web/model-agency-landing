@@ -7,6 +7,7 @@ import { scrollToSection } from "@/lib/utils";
 import { SECTIONS } from "@/lib/const";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import { trackEvent } from "@/lib/analytics";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -18,6 +19,7 @@ const Navbar = () => {
       router.push(`/#${section}`);
     }
     setOpen(false);
+    trackEvent("User Interaction", "Click", `Navigation ${section}`)
     scrollToSection(section);
   };
 
@@ -26,6 +28,7 @@ const Navbar = () => {
     if(pathname !== "/"){
       router.push(`/#${section}`);
     }
+    trackEvent("User Interaction", "Click", `Navigation ${section}`)
     scrollToSection(section);
   };
 
@@ -34,7 +37,7 @@ const Navbar = () => {
     <nav className="w-full min-h-[78px] sticky top-0 bg-transparent z-[100] pt-2 px-2 md:px-0">
       <div className="container px-6 py-4 mx-auto relative bg-gradient-to-tr from-[#1C1D1F]/80 from-0% via-[#28292C]/80 via-50% to-[#1C1D1F] to-100% backdrop-blur-sm rounded-[24px] ">
         <div className="flex justify-between items-center">
-          <Link href="/" className="flex gap-1 items-center">
+          <Link onClick={() => trackEvent("User Interaction", "Click", "Logo")} href="/" className="flex gap-1 items-center">
             <Crown className="h-[23px] w-[23px] md:h-[36px] md:w-[36px] text-[#D0B48C]" />
             <p className="primary-gradient-text text-[1.5rem] md:text-[2.5rem] font-semibold">
               Elluxe
@@ -80,7 +83,7 @@ const Navbar = () => {
               </div>
             )}
             <Link href="/apply-now">
-              <Button className="hidden sm:block" variant="default">
+              <Button onClick={() => trackEvent("User Interaction", "Click", "Navigation Apply Now")}  className="hidden sm:block" variant="default">
                 Apply Now
               </Button>
             </Link>

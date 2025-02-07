@@ -2,6 +2,7 @@ import ArrowButton from "@/components/ui/arrow-button";
 import { SECTIONS } from "@/lib/const";
 import Link from "next/link";
 import FadeInAnimation from "../common/fade-in-animation";
+import { trackEvent } from "@/lib/analytics";
 
 const CTAFive = () => {
   return (
@@ -17,7 +18,7 @@ const CTAFive = () => {
           <p className="text-white text-services-link-mobile md:text-services-link">
             <span className="primary-gradient-text">See more</span>  about how our<br/> work will increase your<br/> earnings
           </p>
-          <Link href="/services" ><ArrowButton carousel={false} /></Link>
+          <Link onClick={() => trackEvent("User Interaction", "Click", "CTA5 Go To Services")} href="/services" ><ArrowButton carousel={false} /></Link>
         </div>
         </FadeInAnimation>
       </div>

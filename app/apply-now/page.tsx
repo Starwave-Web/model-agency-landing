@@ -12,6 +12,7 @@ import ApplyNowTwo from "@/components/apply-now/apply-now-two";
 import { Button } from "@/components/ui/button";
 
 import ProgressCircle from "@/components/ui/progress-circle";
+import { trackEvent } from "@/lib/analytics";
 
 import { useMultistepForm } from "@/lib/useMultistepForm";
 import { useRouter } from "next/navigation";
@@ -43,9 +44,18 @@ const ApplyNow = () => {
   const [applicationFormData, setApplicationFormData] = useState(INITIAL_DATA);
   const router = useRouter();
 
+  const handlePrevious = (previousStepIndex: number) => { 
+    trackEvent("User Interaction", "Click", `Previous fromStepNr: ${previousStepIndex + 1}`);
+    back();
+   }
+  const handleNext = (previousStepIndex: number) => {  
+    trackEvent("User Interaction", "Click", `Next fromStepNr: ${previousStepIndex + 1}`);
+    next();
+  }
+
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    if (!isLastStep) return next();
+    if (!isLastStep) return handleNext(currentStepIndex);
     if (isLastStep) {
       try {
       const response = await fetch("/api/airtable", {
@@ -59,7 +69,8 @@ const ApplyNow = () => {
       if (!response.ok) {
         throw new Error("Failed to submit form");
       }
-
+      
+      trackEvent("Conversion", "Form Submission", "Application Form");
       setApplicationFormData(INITIAL_DATA);
       router.push("/"); 
       } catch (error) {
@@ -85,6 +96,9 @@ const ApplyNow = () => {
       <ApplyNowNine key={"nine"} {...applicationFormData} updateField={updateField} />,
   ]);
 
+
+  
+
   return (
     <div className="w-full bg-primary-black -mt-[100px]">
       <div className="container py-[92px] mx-auto">
@@ -101,7 +115,7 @@ const ApplyNow = () => {
           {step}
           <div className="flex items-center justify-between px-6">
             {!isFirstStep && (
-              <Button onClick={back} type="button" variant="ghost">
+              <Button onClick={() => handlePrevious(currentStepIndex)} type="button" variant="ghost">
                 Previous
               </Button>
             )}

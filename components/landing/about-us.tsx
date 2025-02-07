@@ -4,6 +4,7 @@ import { PlayButtonIcon } from "@/components/icons/common";
 import VideoCover from "@/assets/images/video-cover.png";
 import { SECTIONS } from "@/lib/const";
 import Link from "next/link";
+import { trackEvent } from "@/lib/analytics";
 
 const AboutUs = () => {
   return (
@@ -16,7 +17,7 @@ const AboutUs = () => {
           <PlayButtonIcon className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-10 w-10 md:h-auto md:w-auto"/>
           <Image className="rounded-[2.3125rem] aspect-[2/3] object-none md:object-contain md:aspect-auto" src={VideoCover} alt="video_cover" />
         </div>
-        <Link className="self-center" href="/apply-now"><Button >Apply Now</Button></Link>
+        <Link className="self-center" href="/apply-now"><Button onClick={() => trackEvent("User Interaction", "Click", "AboutUs Apply Now")} >Apply Now</Button></Link>
       </div>
     </section>
   );

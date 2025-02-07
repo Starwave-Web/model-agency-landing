@@ -15,6 +15,7 @@ import { Input } from "./input";
 import { Button } from "./button";
 import { Textarea } from "./textarea";
 import { useToast } from "@/hooks/use-toast";
+import { trackEvent } from "@/lib/analytics";
 
 // "successMessage": {
 //     "title": "Message sent successfully!",
@@ -79,6 +80,7 @@ const ContactForm = () => {
         body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
       });
       if (res.status === 200) {
+        trackEvent("User Engagement", "Form Submission", "Contact Form")
         form.reset();
         toast({
           title: "Message sent successfully!",

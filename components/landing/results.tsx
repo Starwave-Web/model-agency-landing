@@ -16,6 +16,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { SECTIONS } from "@/lib/const";
 import Link from "next/link";
+import { trackEvent } from "@/lib/analytics";
 
 const Results = () => {
   return (
@@ -77,10 +78,10 @@ const Results = () => {
               />
             </CarouselItem>
           </CarouselContent>
-          <CarouselPrevious className="hidden md:flex -left-6" />
-          <CarouselNext className="hidden md:flex -right-6" />
+          <CarouselPrevious onClick={() => trackEvent("User Interaction", "Click", "Results Carousel Prev")} className="hidden md:flex -left-6" />
+          <CarouselNext onClick={() => trackEvent("User Interaction", "Click", "Results Carousel Next")} className="hidden md:flex -right-6" />
         </Carousel>
-        <Link href="/apply-now"><Button>Apply Now</Button></Link>
+        <Link href="/apply-now"><Button onClick={() => trackEvent("User Interaction", "Click", "Results Apply Now")}>Apply Now</Button></Link>
       </div>
     </section>
   );
