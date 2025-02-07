@@ -12,8 +12,7 @@ const CTAThree = () => {
             We provide all-inclusive talent management,{" "}
             <span className="primary-gradient-text">24/7</span> support across
             all platforms and use proven marketing strategies to build fan
-            loyalty and
-            <span className="primary-gradient-text">maximize</span> your
+            loyalty and <span className="primary-gradient-text"> maximize</span> your
             revenue.
           </h4>
         </FadeInAnimation>
