@@ -166,7 +166,28 @@ export default {
             lineHeight: "100%",
           },
         ],
+        "description-title": [
+          "1.125rem",
+          {
+            fontWeight: "600",
+            lineHeight: "100%",
+          },
+        ],
+        "description-title-mobile": [
+          "1rem",
+          {
+            fontWeight: "600",
+            lineHeight: "100%",
+          },
+        ],
         description: [
+          "1.125rem",
+          {
+            fontWeight: "400",
+            lineHeight: "100%",
+          },
+        ],
+        "description-mobile": [
           "1rem",
           {
             fontWeight: "600",
@@ -189,6 +210,13 @@ export default {
         ],
         "form-text": [
           "1.5rem",
+          {
+            fontWeight: "400",
+            lineHeight: "100%",
+          },
+        ],
+        "form-check": [
+          "1.375rem",
           {
             fontWeight: "400",
             lineHeight: "100%",

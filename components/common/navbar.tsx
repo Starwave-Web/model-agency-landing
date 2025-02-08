@@ -88,9 +88,9 @@ const Navbar = () => {
         </div>
       </div>
       {open && (
-        <div className="px-6 absolute w-full">
+        <div className="pl-3 pr-6 mt-3 absolute w-full">
           <div className="rounded-[24px] bg-featured-card-bg w-full">
-            <ul className="text-white text-navigation flex flex-col items-center gap-6 py-6">
+            <ul className="text-white text-navigation flex flex-col items-center gap-6 py-8">
               <li
                 onClick={() => handleMobileScroll(SECTIONS.ABOUTUS)}
                 className="cursor-pointer"

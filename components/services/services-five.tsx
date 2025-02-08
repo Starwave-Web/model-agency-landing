@@ -9,13 +9,13 @@ const ServicesFive = () => {
         <div className="flex justify-between">
           <div className="flex flex-col min-[1280px]:flex-row md:gap-8  min-[1280px]:justify-between">
             <div className="flex items-start flex-col-reverse min-[1280px]:flex-row gap-8">
-              <div className="flex flex-col min-[1280px]:flex-row gap-8">
+              <div className="flex flex-col min-[1280px]:flex-row gap-12 md:gap-8">
                 <div className="flex flex-col gap-4">
-                  <div className="flex items-start gap-[2px] text-white">
+                  <div className="flex items-start gap-1 text-white">
                     <h4 className="text-h4">01</h4>
-                    <p className="text-description">Marketing</p>
+                    <p className="text-description-mobile md:text-description-title">Marketing</p>
                   </div>
-                  <p className="text-white text-description leading-[22px] tracking-[2%] min-[1280px]:w-[250px]">
+                  <p className="text-white text-description-mobile md:text-description leading-[22px] tracking-[2%] min-[1280px]:w-[250px]">
                     At Elluxe, we know that effective marketing is essential for
                     growing and sustaining a successful account. Our team of
                     experts uses proven strategies to boost engagement and
@@ -28,13 +28,13 @@ const ServicesFive = () => {
                   </p>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <div className="flex items-start gap-[2px] text-white">
+                  <div className="flex items-start gap-1 text-white">
                     <h4 className="text-h4">02</h4>
-                    <p className="text-description">
+                    <p className="text-description-mobile md:text-description-title">
                       OnlyFans Account Management 
                     </p>
                   </div>
-                  <p className="text-white text-description leading-[22px] tracking-[2%] min-[1280px]:w-[250px]">
+                  <p className="text-white text-description-mobile md:text-description leading-[22px] tracking-[2%] min-[1280px]:w-[250px]">
                     Managing an account can be overwhelming, especially as your
                     audience grows. Our team takes care of everything, from
                     optimizing your profile and setting subscription rates to
@@ -45,11 +45,11 @@ const ServicesFive = () => {
                   </p>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <div className="flex items-start gap-[2px] text-white">
+                  <div className="flex items-start gap-1 text-white">
                     <h4 className="text-h4">03</h4>
-                    <p className="text-description">Social Media Management</p>
+                    <p className="text-description-mobile md:text-description-title">Social Media Management</p>
                   </div>
-                  <p className="text-white text-description leading-[22px] tracking-[2%]  min-[1280px]:w-[250px]">
+                  <p className="text-white text-description-mobile md:text-description leading-[22px] tracking-[2%]  min-[1280px]:w-[250px]">
                     Social media is a powerful way for celebrities to connect
                     with fans and promote their content. At Elluxe, we
                     understand how managing multiple accounts can be
@@ -66,7 +66,7 @@ const ServicesFive = () => {
               </div>
 
               <div className="flex flex-col items-end justify-between">
-                <h4 className="primary-gradient-text text-h4-mobile md:text-h4 mb-8 min-[1280px]:text-right">
+                <h4 className="text-white text-h4-mobile md:text-h4 md:mb-8 mb-8 min-[1280px]:text-right">
                   Management
                   <br />{" "}
                   <span className="primary-gradient-text">& Marketing</span>
