@@ -67,7 +67,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html className="bg-primary-black" lang="en">
       <body className={SFProDisplay.className}>
         <Navbar />
         {children}

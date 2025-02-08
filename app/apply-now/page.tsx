@@ -86,7 +86,7 @@ const ApplyNow = () => {
   ]);
 
   return (
-    <div className="w-full bg-primary-black -mt-[100px]">
+    <div className="w-full bg-primary-black">
       <div className="container py-[92px] mx-auto">
         <form
           onSubmit={onSubmit}
@@ -109,7 +109,7 @@ const ApplyNow = () => {
               type="submit"
               variant="default"
             >
-              {isLastStep ? "Finish" : "Next"}
+              {isLastStep ? "Submit" : "Next"}
             </Button>
           </div>
         </form>

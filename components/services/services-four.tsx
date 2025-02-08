@@ -7,20 +7,20 @@ const ServicesFour = () => {
       <FadeInAnimation threshold={0.2}>
       <div className="container mx-auto px-6 py-32 md:py-[262px]">
         <div className="flex flex-col min-[1280px]:flex-row min-[1280px]:justify-between">
-          <div className="flex flex-col items-start justify-between">
-            <h4 className="text-white text-h4-mobile md:text-h4 mb-8">
+          <div className="flex flex-col items-start mb-4">
+            <h4 className="text-white text-h4-mobile md:text-h4 mb-8 md:mb-0">
               Company <span className="primary-gradient-text">development</span>
             </h4>
             <Button className="hidden min-[1280px]:block" variant="outline">Apply Now</Button>
           </div>
           <div className="flex flex-col gap-4">
-            <div className="flex items-start gap-[2px] text-white">
+            <div className="flex items-start gap-1 text-white">
               <h4 className="text-h4">01</h4>
-              <p className="text-description">
+              <p className="text-description-mobile md:text-description-title">
                 Elluxe
               </p>
             </div>
-            <p className="text-white text-description leading-[22px] tracking-[2%] min-[1280px]:w-[495px]">
+            <p className="text-white text-description-mobile md:text-description leading-[22px] tracking-[2%] min-[1280px]:w-[495px]">
               We empower our models to take control of their financial futures.
               With expert guidance and support, we help them build independent
               careers, ensuring a sustainable income beyond social media. Our

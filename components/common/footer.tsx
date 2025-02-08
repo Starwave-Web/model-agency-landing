@@ -16,11 +16,11 @@ const Footer = () => {
     scrollToSection(section);
   };
 
-  return (
+  return pathname === "/apply-now" ? null : (
     <section className="w-full bg-primary-black">
       <div className="container mx-auto py-8 md:pt-[53px] md:pb-[18px]">
         <div className="h-px w-full bg-white" />
-        <ul className="text-white text-navigation gap-6 flex justify-center my-7 md:mt-4 md:mb-9 px-6">
+        <ul className="text-white text-[1rem] gap-6 flex justify-center my-7 md:mt-4 md:mb-9 px-6">
           <li
             onClick={() => handleNavigation(SECTIONS.ABOUTUS)}
             className="cursor-pointer"
@@ -45,9 +45,6 @@ const Footer = () => {
         </ul>
         <div className="flex items-center justify-center gap-14 text-white px-6">
           <p>©2025 Elluxe Management. All rights reserved.</p>
-          <Link href="/">
-            <p className="underlined">Privacy Policy</p>
-          </Link>
         </div>
       </div>
     </section>

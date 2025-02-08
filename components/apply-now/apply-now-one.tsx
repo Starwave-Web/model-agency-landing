@@ -18,7 +18,7 @@ const ApplyNowOne = ({ isVip, updateField }: ApplyNowOneProps) => {
         <div className="flex flex-col gap-8 md:gap-10 items-start">
           <div className="flex flex-col items-start gap-4 md:gap-[33px]">
             <div className="text-white flex flex-row-reverse gap-6">
-              <label className="!text-form-text">
+              <label className="!text-form-check">
                 Please check this box if you already earn over $10,000 per month
                 from OnlyFans, in which case you will be enrolled in our VIP
                 program.
@@ -35,7 +35,7 @@ const ApplyNowOne = ({ isVip, updateField }: ApplyNowOneProps) => {
                 className="w-[25px] h-[25px] accent-[#3D3F43] rounded-[4px] shadow-inner bg-[#3D3F43]"
               />
             </div>
-            <p className="text-white text-form-text">
+            <p className="text-white text-form-check">
               If you&apos;re not at $10,000 leave this blank, we will get you there
               soon enough
             </p>

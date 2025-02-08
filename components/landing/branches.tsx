@@ -31,8 +31,8 @@ const branches = [
 
 const Branches = () => {
   return (
-    <section id={SECTIONS.BRANCHES} className="w-full bg-marble-bg-big bg-cover pb-[7rem]">
-      <div className="container mx-auto px-6 flex flex-col items-center gap-12 pt-[4.8125rem] pb-[6.125rem] md:pb-[8rem]">
+    <section id={SECTIONS.BRANCHES} className="w-full bg-marble-bg-big bg-cover pb-[8.5rem]">
+      <div className="container mx-auto px-6 flex flex-col items-center gap-12 pt-[7rem] pb-[6.125rem] md:pb-[9.625rem]">
         <h4 className="text-white text-h4-mobile md:text-h4 text-center">
           Our <span className="primary-gradient-text">Global Branches</span>
         </h4>

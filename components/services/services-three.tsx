@@ -15,7 +15,7 @@ const ServicesThree = () => {
             <h3 className="text-white text-h3-mobile md:text-h3">
               Our <span className="primary-gradient-text">services</span>
             </h3>
-            <ul className="text-white text-services-menu-mobile md:text-services-menu flex flex-col items-start gap-4 md:gap-6 ">
+            <ul className="text-white text-services-menu-mobile md:text-services-menu flex flex-col items-start gap-4 md:gap-10 ">
               <li
                 onClick={() => scrollToSection(SECTIONS.COMPANYDEVELOPMENT)}
                 className="underline underline-offset-8 cursor-pointer leading-[44px]"
@@ -37,7 +37,7 @@ const ServicesThree = () => {
             </ul>
           </div>
           <Image
-            className="md:max-w-[549.41px] max-w-[252px]"
+            className="md:max-w-[33.5rem] max-w-[252px]"
             src={MobileChatServices}
             alt="service_mobile_chat"
           />
