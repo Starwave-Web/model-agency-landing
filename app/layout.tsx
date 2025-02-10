@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import Navbar from "@/components/common/navbar";
 import Footer from "@/components/common/footer";
 import { Toaster } from "@/components/ui/toaster";
+import GoogleAnalyticsScripts from "@/components/analytics";
 
 const SFProDisplay = localFont({
   src: [
@@ -66,8 +67,28 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html className="bg-primary-black" lang="en">
+      <head>
+        <link
+          rel="preload"
+          href="/images/hero-bg.png"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="/images/featured-marble-bg.png"
+          as="image"
+        />
+        
+        <link
+          rel="preload"
+          href="/images/marble-bg-big.png"
+          as="image"
+        />
+        <GoogleAnalyticsScripts />
+      </head>
       <body className={SFProDisplay.className}>
         <Navbar />
         {children}
