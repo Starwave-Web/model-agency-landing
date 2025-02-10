@@ -1,17 +1,19 @@
 import { Button } from "@/components/ui/button";
 import FadeInAnimation from "../common/fade-in-animation";
+import { SECTIONS } from "@/lib/const";
+import Link from "next/link";
 
 const ServicesFour = () => {
   return (
-    <section className="w-full bg-primary-black">
+    <section id={SECTIONS.COMPANYDEVELOPMENT} className="w-full bg-primary-black">
       <FadeInAnimation threshold={0.2}>
       <div className="container mx-auto px-6 py-32 md:py-[262px]">
         <div className="flex flex-col min-[1280px]:flex-row min-[1280px]:justify-between">
           <div className="flex flex-col items-start mb-4">
-            <h4 className="text-white text-h4-mobile md:text-h4 mb-8 md:mb-0">
+            <h4 className="text-white text-h4-mobile md:text-h4 mb-8">
               Company <span className="primary-gradient-text">development</span>
             </h4>
-            <Button className="hidden min-[1280px]:block" variant="outline">Apply Now</Button>
+            <Link href="/apply-now"><Button className="hidden min-[1280px]:block" variant="outline">Apply Now</Button></Link>
           </div>
           <div className="flex flex-col gap-4">
             <div className="flex items-start gap-1 text-white">
@@ -30,7 +32,7 @@ const ServicesFour = () => {
               influence, we are committed to helping you achieve lasting
               financial success and stability.
             </p>
-            <Button className="min-[1280px]:hidden w-fit mt-4" variant="outline">Apply Now</Button>
+            <Link href="/apply-now"><Button className="min-[1280px]:hidden w-fit mt-4" variant="outline">Apply Now</Button></Link>
           </div>
         </div>
       </div>

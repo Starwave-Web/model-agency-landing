@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import FadeInAnimation from "../common/fade-in-animation";
+import { SECTIONS } from "@/lib/const";
+import Link from "next/link";
 
 const ServicesFive = () => {
   return (
-    <section className="w-full bg-primary-black">
+    <section id={SECTIONS.MANAGEMENTMARKETING} className="w-full bg-primary-black">
       <FadeInAnimation threshold={0.2}>
       <div className="container mx-auto px-6 py-32 md:py-[190px]">
         <div className="flex justify-between">
@@ -71,9 +73,9 @@ const ServicesFive = () => {
                   <br />{" "}
                   <span className="primary-gradient-text">& Marketing</span>
                 </h4>
-                <Button className="hidden min-[1280px]:block" variant="outline">
+                <Link href="/apply-now"><Button className="hidden min-[1280px]:block" variant="outline">
                   Apply Now
-                </Button>
+                </Button></Link>
               </div>
             </div>
           </div>

@@ -61,7 +61,7 @@ const ApplyNow = () => {
       }
 
       setApplicationFormData(INITIAL_DATA);
-      router.push("/"); 
+      router.push("/thank-you"); 
       } catch (error) {
       console.error("Error submitting form:", error);
       }

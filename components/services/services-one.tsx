@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import FadeInAnimation from "../common/fade-in-animation";
+import Link from "next/link";
 
 const ServicesOne = () => {
   return (
@@ -19,7 +20,7 @@ const ServicesOne = () => {
           </FadeInAnimation>
         </div>
         <FadeInAnimation>
-        <Button variant="default">Apply Now</Button>
+        <Link href="/apply-now"><Button variant="default">Apply Now</Button></Link>
         </FadeInAnimation>      
       </div>
     </section>
