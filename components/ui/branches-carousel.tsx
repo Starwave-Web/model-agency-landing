@@ -28,8 +28,6 @@ const branchesWithText = [
     image: GoldCoast,
     alt: "GoldCoast",
   },
-  { id: "Dubai2", location: "Dubai", image: Dubai, alt: "Dubai" },
-  { id: "Miami2", location: "Miami", image: Miami, alt: "Miami" },
 ];
 
 const BranchesCarousel = () => {
@@ -55,7 +53,7 @@ const BranchesCarousel = () => {
       <CarouselContent className="-ml-24">
         {branchesWithText.map((branch) => (
           <CarouselItem key={branch.id} className="pl-1">
-            <Image className="w-[8.2788rem] h-auto rounded-[0.125rem]" src={branch.image} alt={branch.alt} />
+            <Image className="w-[8.2788rem] h-[350px] object-cover object-left rounded-[0.125rem]" src={branch.image} alt={branch.alt} />
           </CarouselItem>
         ))}
       </CarouselContent>
