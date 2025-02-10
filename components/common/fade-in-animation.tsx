@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 interface FadeInAnimationProps {
@@ -20,6 +20,24 @@ const FadeInAnimation: React.FC<FadeInAnimationProps> = ({
     triggerOnce: false, // Animates every time it enters/exits the viewport
     threshold: threshold ?? 1, // Visibility threshold (20% visible)
   });
+  const [scrollDirection, setScrollDirection] = useState<"up" | "down" | null>("up");
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const updateScrollDirection = () => {
+      const currentScrollY = window.scrollY;
+
+      if (Math.abs(currentScrollY - lastScrollY) > 10) {
+        setScrollDirection(currentScrollY > lastScrollY ? "down" : "up");
+        lastScrollY = currentScrollY > 0 ? currentScrollY : 0;
+      }
+    };
+
+    window.addEventListener("scroll", updateScrollDirection);
+
+    return () => window.removeEventListener("scroll", updateScrollDirection);
+  }, []);
 
   useEffect(() => {
     if (inView) {
@@ -30,9 +48,10 @@ const FadeInAnimation: React.FC<FadeInAnimationProps> = ({
   }, [controls, inView]);
 
   const variants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 2 } },
+    hidden: { opacity: 0, y: scrollDirection === "up" ? 20 : -20, },
+    visible: { opacity: 1, y: 0, transition: { duration: 2, ease: "easeOut" }, },
   };
+
 
   return (
     <motion.div
