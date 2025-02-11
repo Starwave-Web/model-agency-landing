@@ -6,7 +6,7 @@ import FadeInAnimation from "../common/fade-in-animation";
 const CTASix = () => {
   return (
     <section id={SECTIONS.CTASIX} className="w-full bg-primary-black">
-      <div className="container mx-auto px-6 py-[11.375rem] flex flex-col items-center">
+      <div className="container mx-auto px-6  py-[8rem] md:py-[11.375rem] flex flex-col items-center">
         <div className="flex flex-col items-start gap-8 md:gap-16">
           <FadeInAnimation>
           <h3 className="text-white text-h3-mobile md:text-h3">

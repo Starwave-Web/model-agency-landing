@@ -18,7 +18,7 @@ const FadeInAnimation: React.FC<FadeInAnimationProps> = ({
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: false, // Animates every time it enters/exits the viewport
-    threshold: threshold ?? 1, // Visibility threshold (20% visible)
+    threshold: threshold ?? 0.4, // Visibility threshold (20% visible)
   });
   const [scrollDirection, setScrollDirection] = useState<"up" | "down" | null>("up");
 

@@ -6,7 +6,7 @@ import FadeInAnimation from "../common/fade-in-animation";
 const CTAThree = () => {
   return (
     <section id={SECTIONS.CTATHREE} className="w-full bg-primary-black">
-      <div className="container mx-auto px-6 flex flex-col items-center gap-16 md:gap-[7rem] py-32 md:pt-[6.25rem] md:pb-[12.0625rem]">
+      <div className="container mx-auto px-6 flex flex-col items-center gap-16 md:gap-[7rem] pb-32 md:pt-[6.25rem] md:pb-[12.0625rem]">
         <FadeInAnimation className="text-white text-h4-mobile md:text-h4 text-left md:text-center w-full md:w-2/4">
           <h4>
             We provide all-inclusive talent management,{" "}
