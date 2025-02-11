@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const ServicesOne = () => {
   return (
-    <section className="w-full bg-primary-black -mt-[100px]">
+    <section className="w-full bg-primary-black md:-mt-[100px]">
       <div className="container mx-auto px-6 py-36 md:pt-[240px] md:pb-[220px] flex flex-col items-center gap-24">
         <div className="flex flex-col items-center gap-9">
           <FadeInAnimation threshold={0.1}>

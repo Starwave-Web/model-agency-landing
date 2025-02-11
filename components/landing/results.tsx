@@ -18,6 +18,13 @@ import { SECTIONS } from "@/lib/const";
 import Link from "next/link";
 
 const Results = () => {
+  const results = [
+    {id:"clinet_one" , image: GirlOne, alt: "clinet_one"},
+    {id:"clinet_two" , image: GirlTwo, alt: "clinet_two"},
+    {id:"clinet_three" , image: GirlThree, alt: "clinet_three"},
+    {id:"clinet_four" , image: GirlFour, alt: "clinet_four"},
+    {id:"clinet_five" , image: GirlFive, alt: "clinet_five"},
+  ]
   return (
     <section id={SECTIONS.RESULTS} className="w-full bg-marble-bg-big bg-cover">
       <div className="container mx-auto px-6 flex flex-col items-center gap-16 md:gap-24 py-32 md:pt-[9.6875rem] md:pb-[10.6875rem]">
@@ -39,43 +46,14 @@ const Results = () => {
         >
           <div className="w-[95px] h-full absolute top-0 left-7 z-10 bg-result-carousel-fade rotate-180" />
           <div className="w-[95px] h-full absolute top-0 right-7 z-10 bg-result-carousel-fade" />
-          {/* <div className="w-[96px] md:w-[230px] h-full absolute top-0 right-0 z-10 bg-gradient-to-l from-[#1C1D1F] from-0% via-[#1C1D1F]/95 via-5% md:via-19% to-[#1C1D1F]/0 to-100% " /> */}
           <CarouselContent className="flex">
-            <CarouselItem className="md:basis-1/3 sm:pl-16">
+            {results.map((result) => <CarouselItem key={result.id} className="md:basis-1/3 max-[390px]:pl-6 pl-8 sm:pl-16 max-lg:ml-20">
               <Image
-                className="max-w-[209px] md:max-w-[237px]"
-                src={GirlOne}
-                alt="client_one"
+                className="max-w-[209px] md:max-w-[237px] mx-8 md:mx-0"
+                src={result.image}
+                alt={result.alt}
               />
-            </CarouselItem>
-            <CarouselItem className="md:basis-1/3 sm:pl-16">
-              <Image
-                className="max-w-[209px] md:max-w-[237px]"
-                src={GirlTwo}
-                alt="client_two"
-              />
-            </CarouselItem>
-            <CarouselItem className="md:basis-1/3 sm:pl-16">
-              <Image
-                className="max-w-[209px] md:max-w-[237px]"
-                src={GirlThree}
-                alt="client_three"
-              />
-            </CarouselItem>
-            <CarouselItem className="md:basis-1/3 sm:pl-16">
-              <Image
-                className="max-w-[209px] md:max-w-[237px]"
-                src={GirlFour}
-                alt="client_four"
-              />
-            </CarouselItem>
-            <CarouselItem className="md:basis-1/3 sm:pl-16">
-              <Image
-                className="max-w-[209px] md:max-w-[237px]"
-                src={GirlFive}
-                alt="client_five"
-              />
-            </CarouselItem>
+            </CarouselItem>)}
           </CarouselContent>
           <CarouselPrevious className="hidden md:flex -left-6" />
           <CarouselNext className="hidden md:flex -right-6" />

@@ -47,7 +47,7 @@ const Navbar = () => {
             >
               About Us
             </li>
-            <Link href="/services">
+            <Link  onClick={() => setOpen(!open)} href="/services">
               <li className="cursor-pointer">Services</li>
             </Link>
             <li
@@ -88,7 +88,7 @@ const Navbar = () => {
         </div>
       </div>
       {open && (
-        <div className="pl-3 pr-6 mt-3 absolute w-full">
+        <div className="pl-3 pr-6 mt-3 absolute w-full md:hidden">
           <div className="rounded-[24px] bg-featured-card-bg w-full">
             <ul className="text-white text-navigation flex flex-col items-center gap-6 py-8">
               <li
@@ -97,7 +97,7 @@ const Navbar = () => {
               >
                 About Us
               </li>
-              <Link href="/services">
+              <Link onClick={() => setOpen(!open)} href="/services">
                 <li className="cursor-pointer">Services</li>
               </Link>
               <li
