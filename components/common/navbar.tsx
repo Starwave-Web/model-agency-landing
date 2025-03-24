@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { CloseIcon, ElluxeLogo, HamburgerIcon } from "../icons/common";
 import { Button } from "../ui/button";
-import { Crown } from "lucide-react";
 import { scrollToSection } from "@/lib/utils";
 import { SECTIONS } from "@/lib/const";
 import Link from "next/link";
@@ -35,10 +34,6 @@ const Navbar = () => {
       <div className="container px-6 py-4 mx-auto relative bg-gradient-to-tr from-[#1C1D1F]/80 from-0% via-[#28292C]/80 via-50% to-[#1C1D1F] to-100% backdrop-blur-sm rounded-[24px] ">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex gap-1 items-center">
-            {/* <Crown className="h-[23px] w-[23px] md:h-[36px] md:w-[36px] text-[#D0B48C]" />
-            <p className="primary-gradient-text text-[1.5rem] md:text-[2.5rem] font-semibold">
-              Elluxe
-            </p> */}
             <ElluxeLogo className="h-[28px] w-fit" />
           </Link>
           <ul className="text-white text-navigation gap-6 hidden md:flex">
