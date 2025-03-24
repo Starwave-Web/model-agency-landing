@@ -34,7 +34,7 @@ const Navbar = () => {
       <div className="container px-6 py-4 mx-auto relative bg-gradient-to-tr from-[#1C1D1F]/80 from-0% via-[#28292C]/80 via-50% to-[#1C1D1F] to-100% backdrop-blur-sm rounded-[24px] ">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex gap-1 items-center">
-            <ElluxeLogo className="h-[28px] w-fit" />
+            <ElluxeLogo className="h-[38px] w-[200px]" />
           </Link>
           <ul className="text-white text-navigation gap-6 hidden md:flex">
             <li
