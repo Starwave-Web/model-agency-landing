@@ -1,5 +1,62 @@
 import { SVGProps, ComponentRef } from "react";
 
+const ArrowRightCircle = (props: SVGProps<ComponentRef<"svg">>) => (
+  <svg
+    {...props}
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+      fill="#1C1D1F"
+    />
+    <path
+      d="M8 12H16"
+      stroke="#FCFEF0"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M12 16L16 12L12 8"
+      stroke="#FCFEF0"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+const ShieldIcon = (props: SVGProps<ComponentRef<"svg">>) => (
+  <svg
+    {...props}
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M20 13C20 18 16.5 20.5 12.34 21.95C12.1222 22.0238 11.8855 22.0202 11.67 21.94C7.5 20.5 4 18 4 13V5.99996C4 5.73474 4.10536 5.48039 4.29289 5.29285C4.48043 5.10532 4.73478 4.99996 5 4.99996C7 4.99996 9.5 3.79996 11.24 2.27996C11.4519 2.09896 11.7214 1.99951 12 1.99951C12.2786 1.99951 12.5481 2.09896 12.76 2.27996C14.51 3.80996 17 4.99996 19 4.99996C19.2652 4.99996 19.5196 5.10532 19.7071 5.29285C19.8946 5.48039 20 5.73474 20 5.99996V13Z"
+      fill="#D0B48C"
+      stroke="#D0B48C"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M9 12L11 14L15 10"
+      stroke="black"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
 const ElluxeLogo = (props: SVGProps<ComponentRef<"svg">>) => (
   <svg
     {...props}
@@ -125,7 +182,7 @@ const HamburgerIcon = (props: SVGProps<ComponentRef<"svg">>) => (
   <svg
     {...props}
     width="23"
-    height="14"
+    height="18"
     viewBox="0 0 23 14"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -210,4 +267,4 @@ const PlayButtonIcon = (props: SVGProps<ComponentRef<"svg">>) => (
   </svg>
 );
 
-export { ElluxeLogo, HamburgerIcon, CloseIcon, PlayButtonIcon };
+export { ArrowRightCircle, ShieldIcon, ElluxeLogo, HamburgerIcon, CloseIcon, PlayButtonIcon };

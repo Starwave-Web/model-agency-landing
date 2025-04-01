@@ -71,6 +71,16 @@ export default function RootLayout({
   return (
     <html className="bg-primary-black" lang="en">
       <head>
+      <link
+          rel="preload"
+          href="/images/hero-bg-mobile.png"
+          as="image"
+        />
+         <link
+          rel="preload"
+          href="/images/hero-mobile-image.png"
+          as="image"
+        />
         <link
           rel="preload"
           href="/images/hero-bg.png"

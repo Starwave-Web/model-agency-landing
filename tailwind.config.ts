@@ -32,6 +32,7 @@ export default {
         "text-secondary":
           "linear-gradient(to top right, #D0B48C 0%, #FCFEF0 100%)",
         "hero-bg": "url('/images/hero-bg.png')",
+        "hero-bg-mobile": "url('/images/hero-bg-mobile.png')",
         "featured-marble-bg": "url('/images/featured-marble-bg.png')",
         "marble-bg-big": "url('/images/marble-bg-big.png')",
       },
