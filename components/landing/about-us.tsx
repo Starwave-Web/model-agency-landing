@@ -15,20 +15,20 @@ const AboutUs = () => {
         <h4 className="text-white text-h4-mobile md:text-h4">
           Meet us - The Elluxe Experience
         </h4>
-        <div className="hidden md:block">
+        <div className="hidden md:block rounded-[20px]">
           <CldVideoPlayer
             width="1920"
             height="1080"
-            className="aspect-[2/3] object-none md:object-contain md:aspect-auto"
+            className="rounded-[20px] aspect-[2/3] object-none md:object-contain md:aspect-auto"
             src="elluxe_desktop"
             logo={false}
           />
         </div>
-        <div className="md:hidden">
+        <div className="md:hidden rounded-[20px]">
           <CldVideoPlayer
             width="608"
             height="1080"
-            className="aspect-[2/3] object-none md:object-contain md:aspect-auto"
+            className="rounded-[20px] aspect-[2/3] object-none md:object-contain md:aspect-auto"
             src="elluxe_mobile"
             logo={false}
           />
