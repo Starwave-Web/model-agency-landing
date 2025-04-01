@@ -11,12 +11,14 @@ import CTAThree from "@/components/landing/cta-three";
 import CTATwo from "@/components/landing/cta-two";
 import Featured from "@/components/landing/featured";
 import Hero from "@/components/landing/hero";
+import HeroMobile from "@/components/landing/hero-mobile";
 import Results from "@/components/landing/results";
 
 export default function Home() {
   return (
     <main>
       <Hero />
+      <HeroMobile/>
       <Featured />
       <CTAOne />
       <AboutUs />

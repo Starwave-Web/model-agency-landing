@@ -34,7 +34,7 @@ const Navbar = () => {
       <div className="container px-6 py-4 mx-auto relative bg-gradient-to-tr from-[#1C1D1F]/80 from-0% via-[#28292C]/80 via-50% to-[#1C1D1F] to-100% backdrop-blur-sm rounded-[24px] ">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex gap-1 items-center">
-            <ElluxeLogo className="h-[38px] w-[200px]" />
+            <ElluxeLogo className="h-[24px] w-[150px] md:h-[38px] md:w-[200px]" />
           </Link>
           <ul className="text-white text-navigation gap-6 hidden md:flex">
             <li
@@ -76,7 +76,7 @@ const Navbar = () => {
               </div>
             )}
             <Link href="/apply-now">
-              <Button className="hidden sm:block" variant="default">
+              <Button className="hidden sm:block" variant="default" size="nav">
                 Apply Now
               </Button>
             </Link>

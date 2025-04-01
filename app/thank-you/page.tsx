@@ -1,5 +1,5 @@
+import { ElluxeLogo } from "@/components/icons/common";
 import { Button } from "@/components/ui/button";
-import { Crown } from "lucide-react";
 import Link from "next/link";
 
 const ThankYou = () => {
@@ -8,11 +8,8 @@ const ThankYou = () => {
       <section className="w-full bg-primary-black md:-mt-[100px]">
         <div className="container mx-auto px-6 flex flex-col gap-10 md:gap-20 py-20 md:py-40 h-[100vh]">
           <div className=" text-white flex flex-col gap-8 md:gap-16">
-            <div className="flex gap-1 items-center">
-              <Crown className="h-[36px] w-[36px] md:h-[66px] md:w-[66px] text-[#D0B48C]" />
-              <p className="primary-gradient-text text-[40px] md:text-[80px] font-semibold">
-                Elluxe
-              </p>
+            <div>
+              <ElluxeLogo className="w-[220px] md:w-[340px]" />
             </div>
             <h1 className="text-h2-mobile md:text-h2">
               <span className="primary-gradient-text">Thank You</span> for Your

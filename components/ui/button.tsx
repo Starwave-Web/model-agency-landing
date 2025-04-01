@@ -19,8 +19,9 @@ const buttonVariants = cva(
         ghost: "bg-trasparent border-none text-white hover:bg-[#CACACA] active:bg-[#A9A9A9] disabled:bg-white/75 disabled:text-[#1C1D1F]/75"  
       },
       size: {
-        default: "px-6 py-2",
+        default: "px-6 py-2 md:px-8 md:py-2.5",
         icon: "h-[3.125rem] w-[3.125rem] p-[0.625rem]",
+        nav: "px-6 py-2 text-btn-mobile md:text-btn-navbar text-white",
       },
     },
     defaultVariants: {

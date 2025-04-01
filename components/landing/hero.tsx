@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id={SECTIONS.HERO}
-      className="w-full bg-hero-bg bg-cover bg-center -mt-[6.25rem] flex items-center h-[80vh] md:h-[100vh]"
+      className="w-full bg-hero-bg bg-cover bg-center -mt-[6.25rem] hidden sm:flex items-center h-[80vh] md:h-[100vh]"
     >
       <div className="container mx-auto px-6 md:mt-[3.125rem]">
         <div className="lg:max-w-1/2 md:max-w-2/3 max-w-full flex flex-col items-start gap-[2rem] md:gap-[2.75rem]">

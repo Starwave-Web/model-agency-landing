@@ -32,6 +32,7 @@ export default {
         "text-secondary":
           "linear-gradient(to top right, #D0B48C 0%, #FCFEF0 100%)",
         "hero-bg": "url('/images/hero-bg.png')",
+        "hero-bg-mobile": "url('/images/hero-bg-mobile.png')",
         "featured-marble-bg": "url('/images/featured-marble-bg.png')",
         "marble-bg-big": "url('/images/marble-bg-big.png')",
       },
@@ -46,7 +47,7 @@ export default {
       },
       fontSize: {
         btn: [
-          "1.3125rem",
+          "24px",
           {
             fontWeight: "600",
             lineHeight: "normal",
@@ -54,13 +55,22 @@ export default {
           },
         ],
         "btn-mobile": [
-          "1.25rem",
+          "20px",
           {
             fontWeight: "600",
             lineHeight: "100%",
             letterSpacing: "0px",
           },
         ],
+        "btn-navbar": [
+          "21px",
+          {
+            fontWeight: "600",
+            lineHeight: "100%",
+            letterSpacing: "0px",
+          },
+        ],
+
         h1: [
           "6rem",
           {
@@ -121,14 +131,14 @@ export default {
           "2.25rem",
           {
             fontWeight: "600",
-            lineHeight: "100%",
+            lineHeight: "125%",
           },
         ],
         "sub-title-mobile": [
           "1.125rem",
           {
             fontWeight: "600",
-            lineHeight: "100%",
+            lineHeight: "125%",
           },
         ],
         "services-menu": [
@@ -184,7 +194,7 @@ export default {
           "1.125rem",
           {
             fontWeight: "400",
-            lineHeight: "100%",
+            lineHeight: "26px",
           },
         ],
         "description-mobile": [
