@@ -1,8 +1,8 @@
-
 import { SECTIONS } from "@/lib/const";
 import { ShieldIcon } from "../icons/common";
 import Image from "next/image";
 import FadeInButton from "../ui/fade-in-button";
+import Link from "next/link";
 
 const HeroMobile = () => {
   return (
@@ -33,9 +33,17 @@ const HeroMobile = () => {
               and focus on what matters
             </p>
           </div>
-          <FadeInButton/>
+          <Link href="/apply-now">
+            <FadeInButton />
+          </Link>
           <div>
-            <Image width={280} height={318} className="w-[280px]" src="/images/hero-mobile-image.png" alt="hero-mobile-image" />
+            <Image
+              width={280}
+              height={318}
+              className="w-[280px]"
+              src="/images/hero-mobile-image.png"
+              alt="hero-mobile-image"
+            />
           </div>
         </div>
       </div>
