@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const ServicesOne = () => {
   return (
-    <section className="w-full bg-primary-black md:-mt-[100px]">
-      <div className="container mx-auto px-6 py-36 md:pt-[240px] md:pb-[220px] flex flex-col items-center gap-24">
+    <section className="w-full bg-primary-black -mt-[100px] bg-marble-bg-big bg-cover bg-center">
+      <div className="container mx-auto px-6 py-36 md:pt-[240px] md:pb-[220px] flex flex-col items-center gap-24 pt-[200px]">
         <div className="flex flex-col items-center gap-9">
           <FadeInAnimation threshold={0.1}>
           <h1 className="primary-gradient-text text-h1-mobile md:text-h1">

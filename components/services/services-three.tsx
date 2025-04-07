@@ -8,7 +8,7 @@ import FadeInAnimation from "../common/fade-in-animation";
 
 const ServicesThree = () => {
   return (
-    <section className="w-full bg-primary-black">
+    <section className="w-full bg-primary-black bg-marble-bg-big bg-cover bg-center md:py-14">
       <FadeInAnimation threshold={0.2}>
         <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center lg:items-start gap-16 md:gap-20 py-32 md:py-[90px]">
           <div className="flex flex-col items-start gap-8 md:gap-[6.9375rem]">
