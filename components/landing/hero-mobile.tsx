@@ -8,27 +8,27 @@ const HeroMobile = () => {
   return (
     <section
       id={SECTIONS.HERO}
-      className="w-full bg-hero-bg-mobile bg-cover bg-center -mt-[6.25rem] flex sm:hidden  items-center h-[110vh]"
+      className="w-full bg-hero-bg-mobile bg-cover bg-center -mt-[6.25rem] flex sm:hidden items-center h-[100vh]"
     >
       <div className="container mx-auto px-6">
-        <div className="max-w-full flex flex-col items-center mt-48 gap-[42px]">
-          <div className="flex gap-2 items-center justify-center">
+        <div className="max-w-full flex flex-col items-center mt-20 gap-[42px]">
+          <div className="flex gap-[3px] items-center justify-center">
             <ShieldIcon className="h-[40px] w-[40px]" />
-            <div className="flex flex-col text-white">
-              <p className="text-h4-mobile">24 million $</p>
-              <p className="text-[18px/20px] font-thin tracking-wider">
+            <div className="flex flex-col text-[#E6E6E6]">
+              <p className="text-[22px]/[16px] font-bold">24 million $</p>
+              <p className="text-[13.7px]/[20px] font-light tracking-wider">
                 generated in 2024
               </p>
             </div>
           </div>
-          <div className="flex flex-col items-center text-[36px]/[38px] font-bold md:text-h2 text-white">
-            <span className="primary-gradient-text text-center">
+          <div className="flex flex-col items-center text-[35px]/[38px] font-bold md:text-h2 text-white text-center">
+            <span className="primary-gradient-text ">
               <h1>Your Profits.</h1>
-              <h1>More, Faster, Easier.</h1>
             </span>
+            <h1>More, Faster, Easier.</h1>
           </div>
           <div>
-            <p className="text-center text-white text-[20px]/[22px] font-thin tracking-wider">
+            <p className="text-center text-[#E6E6E6] text-[18px]/[22px] font-light tracking-wider">
               Maximize your earnings, save time, <br />
               and focus on what matters
             </p>
@@ -38,9 +38,9 @@ const HeroMobile = () => {
           </Link>
           <div>
             <Image
-              width={280}
+              width={260}
               height={318}
-              className="w-[280px]"
+              className="w-[260px]"
               src="/images/hero-mobile-image.png"
               alt="hero-mobile-image"
             />
