@@ -11,7 +11,7 @@ const HeroMobile = () => {
       className="w-full bg-hero-bg-mobile bg-cover bg-center -mt-[6.25rem] flex sm:hidden items-center h-[100vh]"
     >
       <div className="container mx-auto px-6">
-        <div className="max-w-full flex flex-col items-center mt-20 gap-[42px]">
+        <div className="max-w-full flex flex-col items-center mt-[130px] gap-[42px]">
           <div className="flex gap-[3px] items-center justify-center">
             <ShieldIcon className="h-[40px] w-[40px]" />
             <div className="flex flex-col text-[#E6E6E6]">
@@ -33,7 +33,7 @@ const HeroMobile = () => {
               and focus on what matters
             </p>
           </div>
-          <Link href="/apply-now">
+          <Link className="-mt-2" href="/apply-now">
             <FadeInButton />
           </Link>
           <div>

@@ -36,7 +36,7 @@ const FadeInButton: React.FC<FadeInButtonProps> = ({
   return (
     <Button className="max-w-48 w-full flex items-center bg-special-gradient rounded-[25px] pl-[26px] pr-2 py-1 justify-end gap-[6px]">
       <motion.p
-        className="text-primary-black text-[17.5px] font-bold"
+        className="text-primary-black text-[17px] font-bold"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: textSpeed, delay: delay + iconSpeed }}
