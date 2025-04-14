@@ -83,7 +83,7 @@ export default function RootLayout({
         />
         <link
           rel="preload"
-          href="/images/hero-bg.png"
+          href="/images/hero-bg.jpg"
           as="image"
         />
         <link
