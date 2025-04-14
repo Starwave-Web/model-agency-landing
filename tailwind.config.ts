@@ -33,7 +33,7 @@ export default {
           "linear-gradient(to top right, #D0B48C 0%, #FCFEF0 100%)",
         "special-gradient":
           "linear-gradient(to top right, #FDE7CC 0%, #FFFFFF 100%)",
-        "hero-bg": "url('/images/hero-bg.png')",
+        "hero-bg": "url('/images/hero-bg.jpg')",
         "hero-bg-mobile": "url('/images/hero-bg-mobile.png')",
         "featured-marble-bg": "url('/images/featured-marble-bg.png')",
         "marble-bg-big": "url('/images/marble-bg-big.png')",
