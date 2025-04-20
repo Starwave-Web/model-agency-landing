@@ -28,7 +28,7 @@ const VideoWithOverlay = (
       {showOverlay && (
         <button
           onClick={handlePlay}
-          className="absolute inset-0 flex items-center justify-center bg-black/40 text-white text-4xl"
+          className="absolute inset-0 flex items-center justify-center bg-black/10 text-white text-4xl"
         >
           <div className="rounded-full p-6 bg-black/75 flex items-center justify-center w-20 h-20">
             ▶
