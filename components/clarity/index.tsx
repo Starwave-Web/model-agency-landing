@@ -2,7 +2,7 @@ import Script from "next/script";
 import React from "react";
 
 const ClarityTrackingScript = () => {
-    const CLARITY_TRACKING_ID = process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID;
+    const CLARITY_TRACKING_ID = process.env.CLARITY_TRACKING_ID;
 
     if (!CLARITY_TRACKING_ID) {
         console.warn("Clarity Tracking ID is missing");
