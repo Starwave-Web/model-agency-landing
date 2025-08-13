@@ -5,6 +5,7 @@ import Navbar from "@/components/common/navbar";
 import Footer from "@/components/common/footer";
 import { Toaster } from "@/components/ui/toaster";
 import GoogleAnalyticsScripts from "@/components/analytics";
+import ClarityTrackingScript from "@/components/clarity";
 
 const SFProDisplay = localFont({
   src: [
@@ -71,12 +72,12 @@ export default function RootLayout({
   return (
     <html className="bg-primary-black" lang="en">
       <head>
-      <link
+        <link
           rel="preload"
           href="/images/hero-bg-mobile.png"
           as="image"
         />
-         <link
+        <link
           rel="preload"
           href="/images/hero-mobile-image.png"
           as="image"
@@ -91,13 +92,14 @@ export default function RootLayout({
           href="/images/featured-marble-bg.png"
           as="image"
         />
-        
+
         <link
           rel="preload"
           href="/images/marble-bg-big.png"
           as="image"
         />
         <GoogleAnalyticsScripts />
+        <ClarityTrackingScript />
       </head>
       <body className={SFProDisplay.className}>
         <Navbar />
